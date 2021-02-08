@@ -1,0 +1,39 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "bsb -make-world",
+    "prestart": "mkdir -p dist && msw init dist",
+    "start": "bsb -make-world -w -ws _ ",
+    "clean": "bsb -clean-world",
+    "server": "parcel src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "BuckleScript",
+    "ReasonReact",
+    "reason-react"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@ahrefs/bs-recharts": "^1.0.1",
+    "bs-css-emotion": "^2.3.0",
+    "lodash": "^4.17.20",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
+    "reason-react": ">=0.7.0",
+    "recharts": "^2.0.4",
+    "util": "^0.12.3"
+  },
+  "devDependencies": {
+    "@glennsl/bs-json": "^5.0.2",
+    "bs-fetch": "^0.6.2",
+    "bs-platform": "^8.4.2",
+    "bsb-js": "^1.1.7",
+    "msw": "^0.26.2",
+    "node-request-interceptor": "^0.6.3",
+    "parcel-bundler": "^1.12.4",
+    "res-msw": "^0.5.1"
+  }
+}

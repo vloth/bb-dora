@@ -1,0 +1,8 @@
+.bsb.lock
+/lib/bs/
+node_modules
+/bundle/out.js
+.cache
+dist
+.merlin
+src/**/*.bs.js
